@@ -1,0 +1,120 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+      'Lucida Sans', Arial, sans-serif;
+  }
+  
+  body {
+    background-color: whitesmoke;
+  }
+  
+  .todo-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 800px;
+    min-height: 600px;
+    background: rgb(111, 21, 21);
+    text-align: center;
+    margin: 32px auto;
+    border-radius: 20px;
+    padding-bottom: 32px;
+  }
+  
+  h1 {
+    margin: 32px 0;
+    color: #fff;
+    font-size: 40px;
+    font-weight: lighter;
+    font-family: monospace, monospace;
+
+  }
+  
+  h3 {
+    margin: auto;
+    color: white;
+    font-family: monospace, monospace;
+    font-size: 30px;
+    font-weight: lighter;
+  }
+  
+  .complete {
+    text-decoration: line-through;
+    opacity: 0.4;
+  }
+  
+  .todo-list-form {
+    margin-bottom: 32px;
+  }
+  
+  .list-input {
+    padding: 14px 32px 14px 16px;
+    border-radius: 4px;
+    border: 2px solid white;
+    outline: none;
+    width: 320px;
+    background: transparent;
+    color: #fff;
+  }
+  
+  .list-input::placeholder {
+    color: #e2e2e2;
+  }
+  
+  .list-button {
+    padding: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    outline: none;
+    background: white;
+    text-transform: capitalize;
+  }
+  
+  .list-input.edit {
+    border: 2px solid #149fff;
+  }
+  
+  .list-button.edit {
+    background: linear-gradient(
+      90deg,
+      rgba(20, 159, 255, 1) 0%,
+      rgba(17, 122, 255, 1) 100%
+    );
+    padding: 16px 22px;
+  }
+  
+  .list-container {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+  }
+  
+  .list-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 4px auto;
+    color: #fff;
+    padding: 16px;
+    border-radius: 5px;
+    width: 90%;
+  }
+  
+  .icons {
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    cursor: pointer;
+  }
+  
+  .delete-icon {
+    margin-right: 5px;
+    color: #fff;
+  }
+  
+  .edit-icon {
+    color: #fff;
+  }
